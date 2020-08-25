@@ -1,0 +1,19 @@
+<div class="country-detail">
+    <div *ngIf="countrySummary">
+        <p class="title">{{countrySummary.Country}}</p>
+        <div class="flex-container cards ">
+            <summary-card title="TOTAL CASES" primaryDetail={{countrySummary.TotalConfirmed}}
+                secondaryDetail='{{countrySummary.NewConfirmed}} ({{percentageIncrease(countrySummary.TotalConfirmed,countrySummary.NewConfirmed)}}%)'></summary-card>
+            <summary-card title="ACTIVE CASES" primaryDetail={{countrySummary.totalActive}}
+                secondaryDetail='{{countrySummary.newActive}} ({{percentageIncrease(countrySummary.totalActive,countrySummary.newActive)}}%)'></summary-card>
+            <summary-card title="RECOVERED" primaryDetail={{countrySummary.TotalRecovered}}
+                secondaryDetail='{{countrySummary.NewRecovered}} ({{percentageIncrease(countrySummary.TotalRecovered,countrySummary.NewRecovered)}}%)'></summary-card>
+            <summary-card title="DEATHS" primaryDetail={{countrySummary.TotalDeaths}}
+                secondaryDetail='{{countrySummary.NewDeaths}} ({{percentageIncrease(countrySummary.TotalDeaths,countrySummary.NewDeaths)}}%)'></summary-card>
+        </div>
+    </div>
+    <div *ngIf="!countrySummary">
+        <p>Data not available</p>
+    </div>
+</div>
+

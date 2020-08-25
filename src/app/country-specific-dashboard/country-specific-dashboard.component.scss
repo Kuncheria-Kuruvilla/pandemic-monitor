@@ -1,0 +1,12 @@
+.country-dashboard{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+.country-dashboard .list{
+    flex-grow: 2;
+}
+.country-dashboard .details{
+    flex-grow: 8;
+}

@@ -1,0 +1,17 @@
+.card {
+    margin: 10px 30px;
+    background: transparent;
+          box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+        -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
+      border-radius: 30px;
+      padding: 4px 30px 20px;
+    }
+
+.card .description{
+  font-size: smaller;
+  margin: auto;
+}
+
+.card .title{
+  font-size: medium;
+}
