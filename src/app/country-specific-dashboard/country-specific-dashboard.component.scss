@@ -1,0 +1,11 @@
+.country-dashboard{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: flex-start;
+}
+.country-dashboard .list{
+    flex-grow: 3;
+}
+.country-dashboard .details{
+    flex-grow: 7;
+}

@@ -1,0 +1,8 @@
+<div class="searchable-container">
+    <input class="search-box" type="text" (keyup)="onKey($event)" />
+    <div class="county-list-container">
+        <ul>
+            <li *ngFor = "let country of countryList" >{{country.Country}}</li>
+        </ul>
+    </div>
+</div>

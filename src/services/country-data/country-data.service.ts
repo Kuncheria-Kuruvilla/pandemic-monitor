@@ -5,12 +5,11 @@ import {API} from "../api-constants"
 @Injectable({
   providedIn: 'root'
 })
-export class GlobalSummaryService {
+export class CountryDataService {
 
-  constructor(private http: HttpClient) {
-   }
+  constructor(private http: HttpClient) { }
 
-   getSummary(){
-     return this.http.get(API.Summary)
-   }
+  getCountries(){
+    return this.http.get(API.Countries)
+  }
 }

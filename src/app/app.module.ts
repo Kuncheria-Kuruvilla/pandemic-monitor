@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { GlobalSummaryComponent } from './global-summary/global-summary.component';
 import { SummaryCardComponent } from './summary-card/summary-card.component';
+import { SearchableCountryListComponent } from './searchable-country-list/searchable-country-list.component';
+import { CountrySpecificDashboardComponent } from './country-specific-dashboard/country-specific-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { SummaryCardComponent } from './summary-card/summary-card.component';
     HeaderComponent,
     GlobalSummaryComponent,
     SummaryCardComponent,
+    SearchableCountryListComponent,
+    CountrySpecificDashboardComponent,
   ],
   imports: [
     BrowserModule,

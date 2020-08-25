@@ -1,0 +1,18 @@
+.searchable-container{
+    padding: 10px;
+}
+.county-list-container ul {
+    list-style-type:none;
+    height: 300px;
+    overflow: scroll;
+  }
+  
+  .county-list-container li {
+    padding: 10px 20px;
+    
+    border-bottom: 1px solid #ccc;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }

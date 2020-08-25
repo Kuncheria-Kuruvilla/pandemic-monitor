@@ -4,3 +4,9 @@
 html, body{
     font-family: 'Nunito Sans', sans-serif;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+  }
