@@ -9,6 +9,7 @@ import { GlobalSummaryComponent } from './global-summary/global-summary.componen
 import { SummaryCardComponent } from './summary-card/summary-card.component';
 import { SearchableCountryListComponent } from './searchable-country-list/searchable-country-list.component';
 import { CountrySpecificDashboardComponent } from './country-specific-dashboard/country-specific-dashboard.component';
+import { CountryDetailComponent } from './country-detail/country-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CountrySpecificDashboardComponent } from './country-specific-dashboard/
     SummaryCardComponent,
     SearchableCountryListComponent,
     CountrySpecificDashboardComponent,
+    CountryDetailComponent,
   ],
   imports: [
     BrowserModule,

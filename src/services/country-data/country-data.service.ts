@@ -1,15 +1,20 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {API} from "../api-constants"
+import { API } from "../api-constants"
 
 @Injectable({
   providedIn: 'root'
 })
 export class CountryDataService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
 
-  getCountries(){
+  getCountries() {
     return this.http.get(API.Countries)
+  }
+
+  getCountryDayOneAllStatus(countrySlug){
+    return this.http.get(API.DayOneAllStatus + `/${countrySlug}`)
   }
 }

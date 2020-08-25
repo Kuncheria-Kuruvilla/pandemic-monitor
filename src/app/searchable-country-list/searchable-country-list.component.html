@@ -2,7 +2,7 @@
     <input class="search-box" type="text" (keyup)="onKey($event)" />
     <div class="county-list-container">
         <ul>
-            <li *ngFor = "let country of countryList" >{{country.Country}}</li>
+            <li *ngFor = "let country of filteredCountryList" (click)="onCountrySelect(country.Slug)">{{country.Country}}</li>
         </ul>
     </div>
 </div>

@@ -9,6 +9,11 @@ export class CountrySpecificDashboardComponent implements OnInit {
 
   constructor() { }
 
+  selectedCountry: any
+
+  setSelectedCountry(selectedCountry){
+    this.selectedCountry = selectedCountry
+  }
   ngOnInit(): void {
   }
 

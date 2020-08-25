@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalSummaryService } from '../../services/GlobalSummary/global-summary.service'
+import {UtilsService} from "../../services/utils/utils.service"
+
 @Component({
   selector: 'app-global-summary',
   templateUrl: './global-summary.component.html',
@@ -7,7 +9,7 @@ import { GlobalSummaryService } from '../../services/GlobalSummary/global-summar
 })
 export class GlobalSummaryComponent implements OnInit {
 
-  constructor(private summary: GlobalSummaryService) { }
+  constructor(private summary: GlobalSummaryService, private utils: UtilsService) { }
 
   totalCases: number
   newCases: number
@@ -32,6 +34,6 @@ export class GlobalSummaryComponent implements OnInit {
   }
 
   percentageIncrease(total,delta){
-    return ((delta / (total-delta)) * 100).toFixed(2);
+    return this.utils.percentageIncrease(total,delta);
   }
 }

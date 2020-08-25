@@ -1,7 +1,9 @@
 <div class="country-dashboard">
     <div class="list">
-        <searchable-country-list></searchable-country-list>
+        <searchable-country-list (countrySelectEvent) = "setSelectedCountry($event)"></searchable-country-list>
     </div>
-    <div class="details">Details component</div>
+    <div class="details">
+        <country-detail *ngIf="selectedCountry" countrySlug={{selectedCountry.Slug}}></country-detail>
+    </div>
 </div>
 
