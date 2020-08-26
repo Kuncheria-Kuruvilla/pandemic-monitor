@@ -1,5 +1,5 @@
 # PandemicMonitor
-
+Try ry it out at [Pandemic Monitor](https://pandemic-monitor.web.app/)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
 ## Development server
