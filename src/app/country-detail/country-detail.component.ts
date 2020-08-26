@@ -2,8 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { GlobalSummaryService } from '../../services/GlobalSummary/global-summary.service'
 import {UtilsService} from "../../services/utils/utils.service"
 import { CountryDataService } from "../../services/country-data/country-data.service"
-import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
-import { Label } from 'ng2-charts';
 
 @Component({
   selector: 'country-detail',
