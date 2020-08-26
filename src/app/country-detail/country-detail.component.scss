@@ -4,11 +4,16 @@ margin: auto;
 }
 .country-detail {
     margin: 10px;
-    padding: 10px;
-    border-left: 1px solid #e0e0e0;
+    padding-top: 20px;
+    padding-left: 30px;
+    border-left: 2px solid #e0e0e0;
     border-top: 1px solid #e0e0e0;
 }
 
 .country-detail .flex-container{
     justify-content: flex-start;
+}
+
+.country-detail .cards {
+    margin-top: 30px;
 }
